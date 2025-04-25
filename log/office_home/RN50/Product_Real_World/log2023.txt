@@ -1,0 +1,478 @@
+[2025-03-26 16:55:13] (main.py 71): INFO 
+cfg: configs/unimos.yaml
+batch_size: 32
+devices: 0
+dataset: office_home
+data_root_path: dataset/
+source: Product
+target: Real_World
+resume: None
+output: log/office_home/RN50/Product_Real_World
+log: log/
+epochs: 50
+file: 2023
+lr: 0.003
+seed: 2023
+model: RN50
+momen: 0.99
+tau: 0.5
+l: None
+alpha_reg: 0.01
+alpha_srctxt: 1
+alpha_srcvis: 1
+end: 0.3
+class_num: 65
+
+[2025-03-26 16:55:25] (model.py 388): INFO Epoch 0 tar: linearAcc=0.0211, promptAcc=0.8265, mixAcc=0.8244
+[2025-03-26 16:55:26] (model.py 438): INFO 0.8244 -> 0.5928
+[2025-03-26 16:55:28] (model.py 331): INFO 
+loss discri_loss: 0.0070 (136) 
+loss vis_celoss: 2.2994 (136) 
+loss txt_celoss: 2.4195 (136) 
+loss sep_loss: 0.0003 (136) 
+loss imloss: -2.1198 (136) 
+
+[2025-03-26 16:55:28] (model.py 388): INFO Epoch 0 tar: linearAcc=0.8405, promptAcc=0.8265, mixAcc=0.8554
+[2025-03-26 16:55:28] (model.py 438): INFO 0.8554 -> 0.8403
+[2025-03-26 16:55:30] (model.py 331): INFO 
+loss discri_loss: 0.0069 (136) 
+loss vis_celoss: 0.7989 (136) 
+loss txt_celoss: 0.6666 (136) 
+loss sep_loss: 0.0002 (136) 
+loss imloss: -2.7944 (136) 
+
+[2025-03-26 16:55:30] (model.py 388): INFO Epoch 1 tar: linearAcc=0.8547, promptAcc=0.8210, mixAcc=0.8584
+[2025-03-26 16:55:31] (model.py 438): INFO 0.8584 -> 0.8543
+[2025-03-26 16:55:33] (model.py 331): INFO 
+loss discri_loss: 0.0069 (136) 
+loss vis_celoss: 0.5077 (136) 
+loss txt_celoss: 0.5115 (136) 
+loss sep_loss: 0.0001 (136) 
+loss imloss: -2.8643 (136) 
+
+[2025-03-26 16:55:33] (model.py 388): INFO Epoch 2 tar: linearAcc=0.8476, promptAcc=0.8380, mixAcc=0.8584
+[2025-03-26 16:55:33] (model.py 438): INFO 0.8584 -> 0.8517
+[2025-03-26 16:55:35] (model.py 331): INFO 
+loss discri_loss: 0.0069 (136) 
+loss vis_celoss: 0.3763 (136) 
+loss txt_celoss: 0.4404 (136) 
+loss sep_loss: 0.0001 (136) 
+loss imloss: -2.9259 (136) 
+
+[2025-03-26 16:55:35] (model.py 388): INFO Epoch 3 tar: linearAcc=0.8538, promptAcc=0.8396, mixAcc=0.8602
+[2025-03-26 16:55:36] (model.py 438): INFO 0.8602 -> 0.8591
+[2025-03-26 16:55:38] (model.py 331): INFO 
+loss discri_loss: 0.0069 (136) 
+loss vis_celoss: 0.3081 (136) 
+loss txt_celoss: 0.3779 (136) 
+loss sep_loss: 0.0001 (136) 
+loss imloss: -2.9673 (136) 
+
+[2025-03-26 16:55:38] (model.py 388): INFO Epoch 4 tar: linearAcc=0.8552, promptAcc=0.8373, mixAcc=0.8646
+[2025-03-26 16:55:39] (model.py 438): INFO 0.8646 -> 0.8566
+[2025-03-26 16:55:41] (model.py 331): INFO 
+loss discri_loss: 0.0069 (136) 
+loss vis_celoss: 0.2502 (136) 
+loss txt_celoss: 0.3602 (136) 
+loss sep_loss: 0.0001 (136) 
+loss imloss: -2.9970 (136) 
+
+[2025-03-26 16:55:41] (model.py 388): INFO Epoch 5 tar: linearAcc=0.8602, promptAcc=0.8377, mixAcc=0.8676
+[2025-03-26 16:55:41] (model.py 438): INFO 0.8676 -> 0.8614
+[2025-03-26 16:55:43] (model.py 331): INFO 
+loss discri_loss: 0.0069 (136) 
+loss vis_celoss: 0.2265 (136) 
+loss txt_celoss: 0.3165 (136) 
+loss sep_loss: 0.0002 (136) 
+loss imloss: -3.0134 (136) 
+
+[2025-03-26 16:55:43] (model.py 388): INFO Epoch 6 tar: linearAcc=0.8602, promptAcc=0.8380, mixAcc=0.8653
+[2025-03-26 16:55:44] (model.py 438): INFO 0.8653 -> 0.8600
+[2025-03-26 16:55:46] (model.py 331): INFO 
+loss discri_loss: 0.0069 (136) 
+loss vis_celoss: 0.1930 (136) 
+loss txt_celoss: 0.3021 (136) 
+loss sep_loss: 0.0002 (136) 
+loss imloss: -3.0161 (136) 
+
+[2025-03-26 16:55:46] (model.py 388): INFO Epoch 7 tar: linearAcc=0.8618, promptAcc=0.8382, mixAcc=0.8655
+[2025-03-26 16:55:47] (model.py 438): INFO 0.8655 -> 0.8621
+[2025-03-26 16:55:49] (model.py 331): INFO 
+loss discri_loss: 0.0069 (136) 
+loss vis_celoss: 0.1836 (136) 
+loss txt_celoss: 0.2879 (136) 
+loss sep_loss: 0.0002 (136) 
+loss imloss: -3.0308 (136) 
+
+[2025-03-26 16:55:49] (model.py 388): INFO Epoch 8 tar: linearAcc=0.8623, promptAcc=0.8377, mixAcc=0.8685
+[2025-03-26 16:55:50] (model.py 438): INFO 0.8685 -> 0.8616
+[2025-03-26 16:55:52] (model.py 331): INFO 
+loss discri_loss: 0.0069 (136) 
+loss vis_celoss: 0.1639 (136) 
+loss txt_celoss: 0.2716 (136) 
+loss sep_loss: 0.0002 (136) 
+loss imloss: -3.0261 (136) 
+
+[2025-03-26 16:55:52] (model.py 388): INFO Epoch 9 tar: linearAcc=0.8614, promptAcc=0.8396, mixAcc=0.8710
+[2025-03-26 16:55:53] (model.py 438): INFO 0.8710 -> 0.8627
+[2025-03-26 16:55:55] (model.py 331): INFO 
+loss discri_loss: 0.0069 (136) 
+loss vis_celoss: 0.1470 (136) 
+loss txt_celoss: 0.2668 (136) 
+loss sep_loss: 0.0002 (136) 
+loss imloss: -3.0600 (136) 
+
+[2025-03-26 16:55:55] (model.py 388): INFO Epoch 10 tar: linearAcc=0.8611, promptAcc=0.8428, mixAcc=0.8699
+[2025-03-26 16:55:56] (model.py 438): INFO 0.8699 -> 0.8630
+[2025-03-26 16:55:58] (model.py 331): INFO 
+loss discri_loss: 0.0069 (136) 
+loss vis_celoss: 0.1561 (136) 
+loss txt_celoss: 0.2560 (136) 
+loss sep_loss: 0.0002 (136) 
+loss imloss: -3.0486 (136) 
+
+[2025-03-26 16:55:58] (model.py 388): INFO Epoch 11 tar: linearAcc=0.8644, promptAcc=0.8364, mixAcc=0.8683
+[2025-03-26 16:55:59] (model.py 438): INFO 0.8683 -> 0.8627
+[2025-03-26 16:56:01] (model.py 331): INFO 
+loss discri_loss: 0.0069 (136) 
+loss vis_celoss: 0.1180 (136) 
+loss txt_celoss: 0.2430 (136) 
+loss sep_loss: 0.0002 (136) 
+loss imloss: -3.0738 (136) 
+
+[2025-03-26 16:56:01] (model.py 388): INFO Epoch 12 tar: linearAcc=0.8621, promptAcc=0.8419, mixAcc=0.8689
+[2025-03-26 16:56:02] (model.py 438): INFO 0.8689 -> 0.8627
+[2025-03-26 16:56:04] (model.py 331): INFO 
+loss discri_loss: 0.0069 (136) 
+loss vis_celoss: 0.1424 (136) 
+loss txt_celoss: 0.2373 (136) 
+loss sep_loss: 0.0002 (136) 
+loss imloss: -3.0878 (136) 
+
+[2025-03-26 16:56:04] (model.py 388): INFO Epoch 13 tar: linearAcc=0.8639, promptAcc=0.8357, mixAcc=0.8660
+[2025-03-26 16:56:04] (model.py 438): INFO 0.8660 -> 0.8634
+[2025-03-26 16:56:06] (model.py 331): INFO 
+loss discri_loss: 0.0069 (136) 
+loss vis_celoss: 0.1129 (136) 
+loss txt_celoss: 0.2307 (136) 
+loss sep_loss: 0.0002 (136) 
+loss imloss: -3.0712 (136) 
+
+[2025-03-26 16:56:07] (model.py 388): INFO Epoch 14 tar: linearAcc=0.8641, promptAcc=0.8341, mixAcc=0.8689
+[2025-03-26 16:56:07] (model.py 438): INFO 0.8689 -> 0.8641
+[2025-03-26 16:56:09] (model.py 331): INFO 
+loss discri_loss: 0.0069 (136) 
+loss vis_celoss: 0.1201 (136) 
+loss txt_celoss: 0.2297 (136) 
+loss sep_loss: 0.0002 (136) 
+loss imloss: -3.0762 (136) 
+
+[2025-03-26 16:56:09] (model.py 388): INFO Epoch 15 tar: linearAcc=0.8660, promptAcc=0.8380, mixAcc=0.8687
+[2025-03-26 16:56:10] (model.py 438): INFO 0.8687 -> 0.8655
+[2025-03-26 16:56:12] (model.py 331): INFO 
+loss discri_loss: 0.0069 (136) 
+loss vis_celoss: 0.0996 (136) 
+loss txt_celoss: 0.2184 (136) 
+loss sep_loss: 0.0002 (136) 
+loss imloss: -3.0826 (136) 
+
+[2025-03-26 16:56:12] (model.py 388): INFO Epoch 16 tar: linearAcc=0.8650, promptAcc=0.8432, mixAcc=0.8696
+[2025-03-26 16:56:13] (model.py 438): INFO 0.8696 -> 0.8657
+[2025-03-26 16:56:15] (model.py 331): INFO 
+loss discri_loss: 0.0069 (136) 
+loss vis_celoss: 0.1069 (136) 
+loss txt_celoss: 0.2123 (136) 
+loss sep_loss: 0.0002 (136) 
+loss imloss: -3.0727 (136) 
+
+[2025-03-26 16:56:15] (model.py 388): INFO Epoch 17 tar: linearAcc=0.8662, promptAcc=0.8361, mixAcc=0.8692
+[2025-03-26 16:56:15] (model.py 438): INFO 0.8692 -> 0.8655
+[2025-03-26 16:56:17] (model.py 331): INFO 
+loss discri_loss: 0.0068 (136) 
+loss vis_celoss: 0.0951 (136) 
+loss txt_celoss: 0.2177 (136) 
+loss sep_loss: 0.0002 (136) 
+loss imloss: -3.0741 (136) 
+
+[2025-03-26 16:56:17] (model.py 388): INFO Epoch 18 tar: linearAcc=0.8639, promptAcc=0.8396, mixAcc=0.8696
+[2025-03-26 16:56:18] (model.py 438): INFO 0.8696 -> 0.8648
+[2025-03-26 16:56:20] (model.py 331): INFO 
+loss discri_loss: 0.0068 (136) 
+loss vis_celoss: 0.0970 (136) 
+loss txt_celoss: 0.2109 (136) 
+loss sep_loss: 0.0002 (136) 
+loss imloss: -3.0904 (136) 
+
+[2025-03-26 16:56:20] (model.py 388): INFO Epoch 19 tar: linearAcc=0.8669, promptAcc=0.8407, mixAcc=0.8687
+[2025-03-26 16:56:21] (model.py 438): INFO 0.8687 -> 0.8655
+[2025-03-26 16:56:23] (model.py 331): INFO 
+loss discri_loss: 0.0068 (136) 
+loss vis_celoss: 0.0756 (136) 
+loss txt_celoss: 0.2064 (136) 
+loss sep_loss: 0.0002 (136) 
+loss imloss: -3.1119 (136) 
+
+[2025-03-26 16:56:23] (model.py 388): INFO Epoch 20 tar: linearAcc=0.8653, promptAcc=0.8334, mixAcc=0.8689
+[2025-03-26 16:56:24] (model.py 438): INFO 0.8689 -> 0.8660
+[2025-03-26 16:56:26] (model.py 331): INFO 
+loss discri_loss: 0.0068 (136) 
+loss vis_celoss: 0.0889 (136) 
+loss txt_celoss: 0.2041 (136) 
+loss sep_loss: 0.0002 (136) 
+loss imloss: -3.0927 (136) 
+
+[2025-03-26 16:56:26] (model.py 388): INFO Epoch 21 tar: linearAcc=0.8664, promptAcc=0.8391, mixAcc=0.8687
+[2025-03-26 16:56:26] (model.py 438): INFO 0.8687 -> 0.8650
+[2025-03-26 16:56:28] (model.py 331): INFO 
+loss discri_loss: 0.0068 (136) 
+loss vis_celoss: 0.0807 (136) 
+loss txt_celoss: 0.1973 (136) 
+loss sep_loss: 0.0002 (136) 
+loss imloss: -3.0733 (136) 
+
+[2025-03-26 16:56:29] (model.py 388): INFO Epoch 22 tar: linearAcc=0.8664, promptAcc=0.8361, mixAcc=0.8687
+[2025-03-26 16:56:29] (model.py 438): INFO 0.8687 -> 0.8650
+[2025-03-26 16:56:31] (model.py 331): INFO 
+loss discri_loss: 0.0068 (136) 
+loss vis_celoss: 0.0868 (136) 
+loss txt_celoss: 0.1971 (136) 
+loss sep_loss: 0.0002 (136) 
+loss imloss: -3.0741 (136) 
+
+[2025-03-26 16:56:31] (model.py 388): INFO Epoch 23 tar: linearAcc=0.8673, promptAcc=0.8373, mixAcc=0.8673
+[2025-03-26 16:56:32] (model.py 438): INFO 0.8673 -> 0.8650
+[2025-03-26 16:56:34] (model.py 331): INFO 
+loss discri_loss: 0.0068 (136) 
+loss vis_celoss: 0.0762 (136) 
+loss txt_celoss: 0.1985 (136) 
+loss sep_loss: 0.0002 (136) 
+loss imloss: -3.1000 (136) 
+
+[2025-03-26 16:56:34] (model.py 388): INFO Epoch 24 tar: linearAcc=0.8655, promptAcc=0.8373, mixAcc=0.8680
+[2025-03-26 16:56:35] (model.py 438): INFO 0.8680 -> 0.8655
+[2025-03-26 16:56:37] (model.py 331): INFO 
+loss discri_loss: 0.0068 (136) 
+loss vis_celoss: 0.0807 (136) 
+loss txt_celoss: 0.1913 (136) 
+loss sep_loss: 0.0002 (136) 
+loss imloss: -3.0930 (136) 
+
+[2025-03-26 16:56:37] (model.py 388): INFO Epoch 25 tar: linearAcc=0.8664, promptAcc=0.8368, mixAcc=0.8678
+[2025-03-26 16:56:38] (model.py 438): INFO 0.8678 -> 0.8650
+[2025-03-26 16:56:40] (model.py 331): INFO 
+loss discri_loss: 0.0068 (136) 
+loss vis_celoss: 0.0604 (136) 
+loss txt_celoss: 0.1907 (136) 
+loss sep_loss: 0.0002 (136) 
+loss imloss: -3.1009 (136) 
+
+[2025-03-26 16:56:40] (model.py 388): INFO Epoch 26 tar: linearAcc=0.8655, promptAcc=0.8366, mixAcc=0.8680
+[2025-03-26 16:56:40] (model.py 438): INFO 0.8680 -> 0.8655
+[2025-03-26 16:56:43] (model.py 331): INFO 
+loss discri_loss: 0.0068 (136) 
+loss vis_celoss: 0.0720 (136) 
+loss txt_celoss: 0.1808 (136) 
+loss sep_loss: 0.0002 (136) 
+loss imloss: -3.1109 (136) 
+
+[2025-03-26 16:56:43] (model.py 388): INFO Epoch 27 tar: linearAcc=0.8685, promptAcc=0.8426, mixAcc=0.8678
+[2025-03-26 16:56:43] (model.py 438): INFO 0.8678 -> 0.8667
+[2025-03-26 16:56:45] (model.py 331): INFO 
+loss discri_loss: 0.0068 (136) 
+loss vis_celoss: 0.0636 (136) 
+loss txt_celoss: 0.1854 (136) 
+loss sep_loss: 0.0002 (136) 
+loss imloss: -3.1096 (136) 
+
+[2025-03-26 16:56:46] (model.py 388): INFO Epoch 28 tar: linearAcc=0.8669, promptAcc=0.8375, mixAcc=0.8673
+[2025-03-26 16:56:46] (model.py 438): INFO 0.8673 -> 0.8655
+[2025-03-26 16:56:48] (model.py 331): INFO 
+loss discri_loss: 0.0068 (136) 
+loss vis_celoss: 0.0736 (136) 
+loss txt_celoss: 0.1867 (136) 
+loss sep_loss: 0.0002 (136) 
+loss imloss: -3.0962 (136) 
+
+[2025-03-26 16:56:48] (model.py 388): INFO Epoch 29 tar: linearAcc=0.8689, promptAcc=0.8409, mixAcc=0.8673
+[2025-03-26 16:56:49] (model.py 438): INFO 0.8673 -> 0.8669
+[2025-03-26 16:56:51] (model.py 331): INFO 
+loss discri_loss: 0.0068 (136) 
+loss vis_celoss: 0.0663 (136) 
+loss txt_celoss: 0.1851 (136) 
+loss sep_loss: 0.0002 (136) 
+loss imloss: -3.0978 (136) 
+
+[2025-03-26 16:56:51] (model.py 388): INFO Epoch 30 tar: linearAcc=0.8671, promptAcc=0.8407, mixAcc=0.8680
+[2025-03-26 16:56:52] (model.py 438): INFO 0.8680 -> 0.8662
+[2025-03-26 16:56:54] (model.py 331): INFO 
+loss discri_loss: 0.0067 (136) 
+loss vis_celoss: 0.0640 (136) 
+loss txt_celoss: 0.1762 (136) 
+loss sep_loss: 0.0002 (136) 
+loss imloss: -3.1083 (136) 
+
+[2025-03-26 16:56:54] (model.py 388): INFO Epoch 31 tar: linearAcc=0.8678, promptAcc=0.8419, mixAcc=0.8678
+[2025-03-26 16:56:55] (model.py 438): INFO 0.8678 -> 0.8662
+[2025-03-26 16:56:57] (model.py 331): INFO 
+loss discri_loss: 0.0067 (136) 
+loss vis_celoss: 0.0662 (136) 
+loss txt_celoss: 0.1770 (136) 
+loss sep_loss: 0.0002 (136) 
+loss imloss: -3.0916 (136) 
+
+[2025-03-26 16:56:57] (model.py 388): INFO Epoch 32 tar: linearAcc=0.8669, promptAcc=0.8409, mixAcc=0.8678
+[2025-03-26 16:56:57] (model.py 438): INFO 0.8678 -> 0.8657
+[2025-03-26 16:56:59] (model.py 331): INFO 
+loss discri_loss: 0.0067 (136) 
+loss vis_celoss: 0.0685 (136) 
+loss txt_celoss: 0.1783 (136) 
+loss sep_loss: 0.0002 (136) 
+loss imloss: -3.1185 (136) 
+
+[2025-03-26 16:56:59] (model.py 388): INFO Epoch 33 tar: linearAcc=0.8687, promptAcc=0.8387, mixAcc=0.8678
+[2025-03-26 16:57:00] (model.py 438): INFO 0.8678 -> 0.8669
+[2025-03-26 16:57:02] (model.py 331): INFO 
+loss discri_loss: 0.0067 (136) 
+loss vis_celoss: 0.0494 (136) 
+loss txt_celoss: 0.1759 (136) 
+loss sep_loss: 0.0002 (136) 
+loss imloss: -3.1265 (136) 
+
+[2025-03-26 16:57:02] (model.py 388): INFO Epoch 34 tar: linearAcc=0.8671, promptAcc=0.8393, mixAcc=0.8676
+[2025-03-26 16:57:03] (model.py 438): INFO 0.8676 -> 0.8667
+[2025-03-26 16:57:05] (model.py 331): INFO 
+loss discri_loss: 0.0067 (136) 
+loss vis_celoss: 0.0627 (136) 
+loss txt_celoss: 0.1738 (136) 
+loss sep_loss: 0.0002 (136) 
+loss imloss: -3.0883 (136) 
+
+[2025-03-26 16:57:05] (model.py 388): INFO Epoch 35 tar: linearAcc=0.8676, promptAcc=0.8387, mixAcc=0.8676
+[2025-03-26 16:57:06] (model.py 438): INFO 0.8676 -> 0.8669
+[2025-03-26 16:57:08] (model.py 331): INFO 
+loss discri_loss: 0.0067 (136) 
+loss vis_celoss: 0.0601 (136) 
+loss txt_celoss: 0.1746 (136) 
+loss sep_loss: 0.0002 (136) 
+loss imloss: -3.1024 (136) 
+
+[2025-03-26 16:57:08] (model.py 388): INFO Epoch 36 tar: linearAcc=0.8676, promptAcc=0.8407, mixAcc=0.8680
+[2025-03-26 16:57:09] (model.py 438): INFO 0.8680 -> 0.8669
+[2025-03-26 16:57:12] (model.py 331): INFO 
+loss discri_loss: 0.0067 (136) 
+loss vis_celoss: 0.0535 (136) 
+loss txt_celoss: 0.1684 (136) 
+loss sep_loss: 0.0002 (136) 
+loss imloss: -3.1172 (136) 
+
+[2025-03-26 16:57:12] (model.py 388): INFO Epoch 37 tar: linearAcc=0.8680, promptAcc=0.8405, mixAcc=0.8676
+[2025-03-26 16:57:12] (model.py 438): INFO 0.8676 -> 0.8671
+[2025-03-26 16:57:14] (model.py 331): INFO 
+loss discri_loss: 0.0067 (136) 
+loss vis_celoss: 0.0577 (136) 
+loss txt_celoss: 0.1709 (136) 
+loss sep_loss: 0.0002 (136) 
+loss imloss: -3.1003 (136) 
+
+[2025-03-26 16:57:15] (model.py 388): INFO Epoch 38 tar: linearAcc=0.8676, promptAcc=0.8391, mixAcc=0.8678
+[2025-03-26 16:57:15] (model.py 438): INFO 0.8678 -> 0.8671
+[2025-03-26 16:57:17] (model.py 331): INFO 
+loss discri_loss: 0.0067 (136) 
+loss vis_celoss: 0.0517 (136) 
+loss txt_celoss: 0.1688 (136) 
+loss sep_loss: 0.0002 (136) 
+loss imloss: -3.1254 (136) 
+
+[2025-03-26 16:57:17] (model.py 388): INFO Epoch 39 tar: linearAcc=0.8683, promptAcc=0.8370, mixAcc=0.8680
+[2025-03-26 16:57:18] (model.py 438): INFO 0.8680 -> 0.8673
+[2025-03-26 16:57:20] (model.py 331): INFO 
+loss discri_loss: 0.0067 (136) 
+loss vis_celoss: 0.0580 (136) 
+loss txt_celoss: 0.1687 (136) 
+loss sep_loss: 0.0002 (136) 
+loss imloss: -3.0988 (136) 
+
+[2025-03-26 16:57:20] (model.py 388): INFO Epoch 40 tar: linearAcc=0.8678, promptAcc=0.8359, mixAcc=0.8683
+[2025-03-26 16:57:21] (model.py 438): INFO 0.8683 -> 0.8671
+[2025-03-26 16:57:23] (model.py 331): INFO 
+loss discri_loss: 0.0067 (136) 
+loss vis_celoss: 0.0529 (136) 
+loss txt_celoss: 0.1638 (136) 
+loss sep_loss: 0.0002 (136) 
+loss imloss: -3.1111 (136) 
+
+[2025-03-26 16:57:23] (model.py 388): INFO Epoch 41 tar: linearAcc=0.8678, promptAcc=0.8359, mixAcc=0.8680
+[2025-03-26 16:57:23] (model.py 438): INFO 0.8680 -> 0.8671
+[2025-03-26 16:57:25] (model.py 331): INFO 
+loss discri_loss: 0.0067 (136) 
+loss vis_celoss: 0.0578 (136) 
+loss txt_celoss: 0.1643 (136) 
+loss sep_loss: 0.0002 (136) 
+loss imloss: -3.1055 (136) 
+
+[2025-03-26 16:57:25] (model.py 388): INFO Epoch 42 tar: linearAcc=0.8676, promptAcc=0.8387, mixAcc=0.8683
+[2025-03-26 16:57:26] (model.py 438): INFO 0.8683 -> 0.8673
+[2025-03-26 16:57:28] (model.py 331): INFO 
+loss discri_loss: 0.0067 (136) 
+loss vis_celoss: 0.0542 (136) 
+loss txt_celoss: 0.1661 (136) 
+loss sep_loss: 0.0002 (136) 
+loss imloss: -3.1054 (136) 
+
+[2025-03-26 16:57:28] (model.py 388): INFO Epoch 43 tar: linearAcc=0.8689, promptAcc=0.8368, mixAcc=0.8678
+[2025-03-26 16:57:29] (model.py 438): INFO 0.8678 -> 0.8671
+[2025-03-26 16:57:31] (model.py 331): INFO 
+loss discri_loss: 0.0066 (136) 
+loss vis_celoss: 0.0523 (136) 
+loss txt_celoss: 0.1653 (136) 
+loss sep_loss: 0.0002 (136) 
+loss imloss: -3.1174 (136) 
+
+[2025-03-26 16:57:31] (model.py 388): INFO Epoch 44 tar: linearAcc=0.8669, promptAcc=0.8400, mixAcc=0.8680
+[2025-03-26 16:57:32] (model.py 438): INFO 0.8680 -> 0.8669
+[2025-03-26 16:57:34] (model.py 331): INFO 
+loss discri_loss: 0.0066 (136) 
+loss vis_celoss: 0.0496 (136) 
+loss txt_celoss: 0.1634 (136) 
+loss sep_loss: 0.0002 (136) 
+loss imloss: -3.1024 (136) 
+
+[2025-03-26 16:57:34] (model.py 388): INFO Epoch 45 tar: linearAcc=0.8678, promptAcc=0.8432, mixAcc=0.8678
+[2025-03-26 16:57:34] (model.py 438): INFO 0.8678 -> 0.8671
+[2025-03-26 16:57:36] (model.py 331): INFO 
+loss discri_loss: 0.0066 (136) 
+loss vis_celoss: 0.0470 (136) 
+loss txt_celoss: 0.1618 (136) 
+loss sep_loss: 0.0002 (136) 
+loss imloss: -3.1132 (136) 
+
+[2025-03-26 16:57:37] (model.py 388): INFO Epoch 46 tar: linearAcc=0.8671, promptAcc=0.8389, mixAcc=0.8678
+[2025-03-26 16:57:37] (model.py 438): INFO 0.8678 -> 0.8673
+[2025-03-26 16:57:39] (model.py 331): INFO 
+loss discri_loss: 0.0066 (136) 
+loss vis_celoss: 0.0452 (136) 
+loss txt_celoss: 0.1599 (136) 
+loss sep_loss: 0.0002 (136) 
+loss imloss: -3.1201 (136) 
+
+[2025-03-26 16:57:39] (model.py 388): INFO Epoch 47 tar: linearAcc=0.8687, promptAcc=0.8398, mixAcc=0.8680
+[2025-03-26 16:57:40] (model.py 438): INFO 0.8680 -> 0.8673
+[2025-03-26 16:57:42] (model.py 331): INFO 
+loss discri_loss: 0.0066 (136) 
+loss vis_celoss: 0.0474 (136) 
+loss txt_celoss: 0.1621 (136) 
+loss sep_loss: 0.0002 (136) 
+loss imloss: -3.1241 (136) 
+
+[2025-03-26 16:57:42] (model.py 388): INFO Epoch 48 tar: linearAcc=0.8680, promptAcc=0.8393, mixAcc=0.8680
+[2025-03-26 16:57:43] (model.py 438): INFO 0.8680 -> 0.8676
+[2025-03-26 16:57:45] (model.py 331): INFO 
+loss discri_loss: 0.0066 (136) 
+loss vis_celoss: 0.0467 (136) 
+loss txt_celoss: 0.1604 (136) 
+loss sep_loss: 0.0002 (136) 
+loss imloss: -3.0906 (136) 
+
+[2025-03-26 16:57:45] (model.py 388): INFO Epoch 49 tar: linearAcc=0.8671, promptAcc=0.8373, mixAcc=0.8673
+[2025-03-26 16:57:45] (model.py 438): INFO 0.8673 -> 0.8671
+[2025-03-26 16:57:45] (model.py 333): INFO best acc=0.8710121512413025 @ epoch 9

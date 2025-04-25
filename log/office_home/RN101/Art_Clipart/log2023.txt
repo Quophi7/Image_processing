@@ -1,0 +1,688 @@
+[2025-03-28 10:22:49] (main.py 71): INFO 
+cfg: configs/unimos.yaml
+batch_size: 32
+devices: 0
+dataset: office_home
+data_root_path: dataset/
+source: Art
+target: Clipart
+resume: None
+output: log/office_home/RN101/Art_Clipart
+log: log/
+epochs: 50
+file: 2023
+lr: 0.003
+seed: 2023
+model: RN101
+momen: 0.99
+tau: 0.5
+l: None
+alpha_reg: 0.01
+alpha_srctxt: 1
+alpha_srcvis: 1
+end: 0.3
+class_num: 65
+
+[2025-03-28 10:22:58] (model.py 165): INFO Raw source label range: [0, 9]
+[2025-03-28 10:22:58] (model.py 166): INFO Raw target label range: [0, 9]
+[2025-03-28 10:22:58] (model.py 172): INFO Number of classes: 65
+[2025-03-28 10:22:58] (model.py 173): INFO Source label range: [0, 9]
+[2025-03-28 10:22:58] (model.py 174): INFO Target label range: [0, 9]
+[2025-03-28 10:22:58] (model.py 176): INFO Unique source labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[2025-03-28 10:22:58] (model.py 177): INFO Unique target labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[2025-03-28 10:23:02] (model.py 460): INFO Epoch 0 tar: linearAcc=0.1535, promptAcc=0.0062, mixAcc=0.0062
+[2025-03-28 10:23:03] (model.py 527): INFO 0.0062 -> 0.0215
+[2025-03-28 10:23:03] (model.py 476): INFO Pseudo-label range: [0, 64]
+[2025-03-28 10:23:03] (model.py 477): INFO Unique pseudo-labels: [0, 1, 2, 9, 12, 14, 15, 16, 17, 18, 19, 20, 21, 23, 24, 28, 31, 32, 33, 34, 35, 40, 41, 44, 47, 49, 50, 51, 52, 53, 64]
+[2025-03-28 10:23:03] (model.py 478): INFO Pseudo-label distribution: [2, 1, 6, 0, 0, 0, 0, 0, 0, 29, 0, 0, 6, 0, 9, 232, 10, 1373, 5, 45, 11, 6, 0, 2, 106, 0, 0, 0, 4, 0, 0, 50, 560, 528, 1, 2, 0, 0, 0, 0, 282, 6, 0, 0, 25, 0, 0, 126, 0, 3, 8, 1, 863, 41, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 22]
+[2025-03-28 10:23:03] (model.py 337): INFO Source label range: [1, 9]
+[2025-03-28 10:23:03] (model.py 338): INFO Target visual label range: [15, 64]
+[2025-03-28 10:23:03] (model.py 339): INFO Number of classes: 65
+[2025-03-28 10:23:03] (model.py 385): INFO 
+loss vis_celoss: 3.9831 (75) 
+loss txt_celoss: 25.5674 (75) 
+loss discri_loss: 0.0068 (75) 
+
+[2025-03-28 10:23:03] (model.py 460): INFO Epoch 0 tar: linearAcc=0.0241, promptAcc=0.0062, mixAcc=0.0062
+[2025-03-28 10:23:04] (model.py 527): INFO 0.0062 -> 0.0188
+[2025-03-28 10:23:04] (model.py 476): INFO Pseudo-label range: [0, 64]
+[2025-03-28 10:23:04] (model.py 477): INFO Unique pseudo-labels: [0, 1, 2, 9, 12, 14, 15, 16, 17, 18, 19, 20, 21, 23, 24, 28, 31, 32, 33, 34, 35, 40, 41, 44, 47, 49, 50, 51, 52, 53, 64]
+[2025-03-28 10:23:04] (model.py 478): INFO Pseudo-label distribution: [2, 1, 6, 0, 0, 0, 0, 0, 0, 29, 0, 0, 6, 0, 9, 232, 10, 1373, 5, 45, 11, 6, 0, 2, 106, 0, 0, 0, 4, 0, 0, 50, 560, 528, 1, 2, 0, 0, 0, 0, 282, 6, 0, 0, 25, 0, 0, 126, 0, 3, 8, 1, 863, 41, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 22]
+[2025-03-28 10:23:04] (model.py 337): INFO Source label range: [2, 9]
+[2025-03-28 10:23:04] (model.py 338): INFO Target visual label range: [15, 52]
+[2025-03-28 10:23:04] (model.py 339): INFO Number of classes: 65
+[2025-03-28 10:23:05] (model.py 385): INFO 
+loss vis_celoss: 2.5135 (75) 
+loss txt_celoss: 19.0636 (75) 
+loss discri_loss: 0.0065 (75) 
+
+[2025-03-28 10:23:05] (model.py 460): INFO Epoch 1 tar: linearAcc=0.0112, promptAcc=0.8499, mixAcc=0.3881
+[2025-03-28 10:23:05] (model.py 527): INFO 0.3881 -> 0.2048
+[2025-03-28 10:23:05] (model.py 476): INFO Pseudo-label range: [0, 64]
+[2025-03-28 10:23:05] (model.py 477): INFO Unique pseudo-labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16, 18, 19, 22, 23, 25, 26, 27, 28, 29, 30, 31, 32, 34, 36, 37, 39, 40, 41, 45, 47, 48, 52, 53, 54, 55, 56, 58, 59, 61, 62, 63, 64]
+[2025-03-28 10:23:05] (model.py 478): INFO Pseudo-label distribution: [328, 203, 92, 123, 467, 203, 229, 179, 215, 554, 8, 0, 3, 48, 25, 261, 6, 0, 14, 87, 0, 0, 2, 8, 0, 7, 11, 18, 7, 46, 2, 245, 252, 0, 2, 0, 2, 61, 0, 6, 287, 5, 0, 0, 0, 13, 0, 87, 6, 0, 0, 0, 128, 45, 3, 33, 8, 0, 2, 16, 0, 12, 1, 1, 4]
+[2025-03-28 10:23:05] (model.py 337): INFO Source label range: [1, 9]
+[2025-03-28 10:23:05] (model.py 338): INFO Target visual label range: [0, 59]
+[2025-03-28 10:23:05] (model.py 339): INFO Number of classes: 65
+[2025-03-28 10:23:06] (model.py 385): INFO 
+loss vis_celoss: 2.4244 (75) 
+loss txt_celoss: 18.7313 (75) 
+loss discri_loss: 0.0062 (75) 
+
+[2025-03-28 10:23:06] (model.py 460): INFO Epoch 2 tar: linearAcc=0.2089, promptAcc=0.8696, mixAcc=0.4868
+[2025-03-28 10:23:07] (model.py 527): INFO 0.4868 -> 0.2300
+[2025-03-28 10:23:07] (model.py 476): INFO Pseudo-label range: [0, 37]
+[2025-03-28 10:23:07] (model.py 477): INFO Unique pseudo-labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 37]
+[2025-03-28 10:23:07] (model.py 478): INFO Pseudo-label distribution: [150, 972, 21, 89, 412, 76, 262, 248, 261, 1872, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2]
+[2025-03-28 10:23:07] (model.py 337): INFO Source label range: [3, 9]
+[2025-03-28 10:23:07] (model.py 338): INFO Target visual label range: [0, 9]
+[2025-03-28 10:23:07] (model.py 339): INFO Number of classes: 65
+[2025-03-28 10:23:08] (model.py 385): INFO 
+loss vis_celoss: 1.4957 (75) 
+loss txt_celoss: 18.7278 (75) 
+loss discri_loss: 0.0059 (75) 
+
+[2025-03-28 10:23:08] (model.py 460): INFO Epoch 3 tar: linearAcc=0.3824, promptAcc=0.8756, mixAcc=0.7031
+[2025-03-28 10:23:09] (model.py 527): INFO 0.7031 -> 0.2820
+[2025-03-28 10:23:09] (model.py 476): INFO Pseudo-label range: [0, 63]
+[2025-03-28 10:23:09] (model.py 477): INFO Unique pseudo-labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 15, 16, 18, 19, 25, 27, 28, 29, 31, 32, 34, 36, 37, 39, 40, 47, 52, 53, 54, 55, 56, 58, 61, 62, 63]
+[2025-03-28 10:23:09] (model.py 478): INFO Pseudo-label distribution: [501, 359, 194, 84, 429, 204, 223, 255, 418, 852, 15, 4, 10, 56, 0, 16, 2, 0, 1, 11, 0, 0, 0, 0, 0, 6, 0, 69, 11, 38, 0, 81, 98, 0, 1, 0, 3, 127, 0, 7, 67, 0, 0, 0, 0, 0, 0, 39, 0, 0, 0, 0, 64, 9, 9, 42, 13, 0, 6, 0, 0, 14, 13, 14]
+[2025-03-28 10:23:09] (model.py 337): INFO Source label range: [9, 9]
+[2025-03-28 10:23:09] (model.py 338): INFO Target visual label range: [0, 62]
+[2025-03-28 10:23:09] (model.py 339): INFO Number of classes: 65
+[2025-03-28 10:23:09] (model.py 385): INFO 
+loss vis_celoss: 1.4289 (75) 
+loss txt_celoss: 18.4539 (75) 
+loss discri_loss: 0.0057 (75) 
+
+[2025-03-28 10:23:10] (model.py 460): INFO Epoch 4 tar: linearAcc=0.3830, promptAcc=0.8488, mixAcc=0.7581
+[2025-03-28 10:23:10] (model.py 527): INFO 0.7581 -> 0.2007
+[2025-03-28 10:23:10] (model.py 476): INFO Pseudo-label range: [0, 9]
+[2025-03-28 10:23:10] (model.py 477): INFO Unique pseudo-labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[2025-03-28 10:23:10] (model.py 478): INFO Pseudo-label distribution: [448, 75, 46, 81, 296, 84, 106, 49, 10, 3170]
+[2025-03-28 10:23:10] (model.py 337): INFO Source label range: [2, 9]
+[2025-03-28 10:23:10] (model.py 338): INFO Target visual label range: [0, 9]
+[2025-03-28 10:23:10] (model.py 339): INFO Number of classes: 65
+[2025-03-28 10:23:11] (model.py 385): INFO 
+loss vis_celoss: 0.6598 (75) 
+loss txt_celoss: 18.7117 (75) 
+loss discri_loss: 0.0055 (75) 
+
+[2025-03-28 10:23:11] (model.py 460): INFO Epoch 5 tar: linearAcc=0.7155, promptAcc=0.7924, mixAcc=0.8021
+[2025-03-28 10:23:12] (model.py 527): INFO 0.8021 -> 0.3107
+[2025-03-28 10:23:12] (model.py 476): INFO Pseudo-label range: [0, 64]
+[2025-03-28 10:23:12] (model.py 477): INFO Unique pseudo-labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 13, 18, 19, 22, 23, 27, 28, 29, 31, 32, 37, 39, 47, 55, 56, 58, 61, 62, 64]
+[2025-03-28 10:23:12] (model.py 478): INFO Pseudo-label distribution: [374, 358, 187, 165, 704, 285, 64, 202, 149, 1006, 154, 0, 0, 28, 0, 0, 0, 0, 1, 13, 0, 0, 15, 2, 0, 0, 0, 59, 13, 47, 0, 62, 49, 0, 0, 0, 0, 261, 0, 15, 0, 0, 0, 0, 0, 0, 0, 21, 0, 0, 0, 0, 0, 0, 0, 60, 5, 0, 4, 0, 0, 22, 35, 0, 5]
+[2025-03-28 10:23:12] (model.py 337): INFO Source label range: [4, 9]
+[2025-03-28 10:23:12] (model.py 338): INFO Target visual label range: [0, 37]
+[2025-03-28 10:23:12] (model.py 339): INFO Number of classes: 65
+[2025-03-28 10:23:12] (model.py 385): INFO 
+loss vis_celoss: 1.4611 (75) 
+loss txt_celoss: 18.6733 (75) 
+loss discri_loss: 0.0053 (75) 
+
+[2025-03-28 10:23:13] (model.py 460): INFO Epoch 6 tar: linearAcc=0.3956, promptAcc=0.8882, mixAcc=0.8740
+[2025-03-28 10:23:13] (model.py 527): INFO 0.8740 -> 0.1885
+[2025-03-28 10:23:13] (model.py 476): INFO Pseudo-label range: [0, 9]
+[2025-03-28 10:23:13] (model.py 477): INFO Unique pseudo-labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[2025-03-28 10:23:13] (model.py 478): INFO Pseudo-label distribution: [49, 54, 12, 49, 114, 147, 46, 1, 13, 3880]
+[2025-03-28 10:23:13] (model.py 337): INFO Source label range: [1, 9]
+[2025-03-28 10:23:13] (model.py 338): INFO Target visual label range: [1, 9]
+[2025-03-28 10:23:13] (model.py 339): INFO Number of classes: 65
+[2025-03-28 10:23:14] (model.py 385): INFO 
+loss vis_celoss: 0.4180 (75) 
+loss txt_celoss: 18.4126 (75) 
+loss discri_loss: 0.0051 (75) 
+
+[2025-03-28 10:23:14] (model.py 460): INFO Epoch 7 tar: linearAcc=0.8616, promptAcc=0.8259, mixAcc=0.8577
+[2025-03-28 10:23:15] (model.py 527): INFO 0.8577 -> 0.2426
+[2025-03-28 10:23:15] (model.py 476): INFO Pseudo-label range: [0, 64]
+[2025-03-28 10:23:15] (model.py 477): INFO Unique pseudo-labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 13, 19, 27, 28, 31, 32, 37, 39, 47, 56, 61, 62, 63, 64]
+[2025-03-28 10:23:15] (model.py 478): INFO Pseudo-label distribution: [638, 292, 138, 145, 447, 219, 107, 269, 286, 704, 169, 0, 0, 50, 0, 0, 0, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 59, 37, 0, 0, 69, 228, 0, 0, 0, 0, 184, 0, 60, 0, 0, 0, 0, 0, 0, 0, 49, 0, 0, 0, 0, 0, 0, 0, 0, 44, 0, 0, 0, 0, 78, 48, 4, 21]
+[2025-03-28 10:23:15] (model.py 337): INFO Source label range: [2, 9]
+[2025-03-28 10:23:15] (model.py 338): INFO Target visual label range: [0, 56]
+[2025-03-28 10:23:15] (model.py 339): INFO Number of classes: 65
+[2025-03-28 10:23:15] (model.py 385): INFO 
+loss vis_celoss: 1.5813 (75) 
+loss txt_celoss: 18.4201 (75) 
+loss discri_loss: 0.0050 (75) 
+
+[2025-03-28 10:23:16] (model.py 460): INFO Epoch 8 tar: linearAcc=0.3184, promptAcc=0.8669, mixAcc=0.8451
+[2025-03-28 10:23:16] (model.py 527): INFO 0.8451 -> 0.1450
+[2025-03-28 10:23:16] (model.py 476): INFO Pseudo-label range: [0, 9]
+[2025-03-28 10:23:16] (model.py 477): INFO Unique pseudo-labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[2025-03-28 10:23:16] (model.py 478): INFO Pseudo-label distribution: [252, 41, 18, 49, 142, 95, 45, 8, 9, 3706]
+[2025-03-28 10:23:16] (model.py 337): INFO Source label range: [2, 9]
+[2025-03-28 10:23:16] (model.py 338): INFO Target visual label range: [0, 9]
+[2025-03-28 10:23:16] (model.py 339): INFO Number of classes: 65
+[2025-03-28 10:23:17] (model.py 385): INFO 
+loss vis_celoss: 0.4618 (75) 
+loss txt_celoss: 18.3593 (75) 
+loss discri_loss: 0.0048 (75) 
+
+[2025-03-28 10:23:17] (model.py 460): INFO Epoch 9 tar: linearAcc=0.8609, promptAcc=0.8767, mixAcc=0.8740
+[2025-03-28 10:23:18] (model.py 527): INFO 0.8740 -> 0.2623
+[2025-03-28 10:23:18] (model.py 476): INFO Pseudo-label range: [0, 63]
+[2025-03-28 10:23:18] (model.py 477): INFO Unique pseudo-labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 13, 19, 27, 28, 32, 37, 47, 56, 61, 62, 63]
+[2025-03-28 10:23:18] (model.py 478): INFO Pseudo-label distribution: [584, 281, 98, 132, 435, 185, 179, 239, 316, 819, 218, 0, 0, 96, 0, 0, 0, 0, 0, 56, 0, 0, 0, 0, 0, 0, 0, 30, 41, 0, 0, 0, 169, 0, 0, 0, 0, 168, 0, 0, 0, 0, 0, 0, 0, 0, 0, 37, 0, 0, 0, 0, 0, 0, 0, 0, 81, 0, 0, 0, 0, 119, 39, 43]
+[2025-03-28 10:23:18] (model.py 337): INFO Source label range: [2, 9]
+[2025-03-28 10:23:18] (model.py 338): INFO Target visual label range: [0, 56]
+[2025-03-28 10:23:18] (model.py 339): INFO Number of classes: 65
+[2025-03-28 10:23:19] (model.py 385): INFO 
+loss vis_celoss: 1.4482 (75) 
+loss txt_celoss: 18.3321 (75) 
+loss discri_loss: 0.0047 (75) 
+
+[2025-03-28 10:23:19] (model.py 460): INFO Epoch 10 tar: linearAcc=0.3645, promptAcc=0.8951, mixAcc=0.8887
+[2025-03-28 10:23:19] (model.py 527): INFO 0.8887 -> 0.1198
+[2025-03-28 10:23:19] (model.py 476): INFO Pseudo-label range: [0, 9]
+[2025-03-28 10:23:19] (model.py 477): INFO Unique pseudo-labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[2025-03-28 10:23:19] (model.py 478): INFO Pseudo-label distribution: [32, 30, 18, 41, 109, 93, 17, 3, 18, 4004]
+[2025-03-28 10:23:19] (model.py 337): INFO Source label range: [5, 9]
+[2025-03-28 10:23:19] (model.py 338): INFO Target visual label range: [2, 9]
+[2025-03-28 10:23:19] (model.py 339): INFO Number of classes: 65
+[2025-03-28 10:23:20] (model.py 385): INFO 
+loss vis_celoss: 0.4295 (75) 
+loss txt_celoss: 18.3833 (75) 
+loss discri_loss: 0.0046 (75) 
+
+[2025-03-28 10:23:20] (model.py 460): INFO Epoch 11 tar: linearAcc=0.8962, promptAcc=0.7003, mixAcc=0.7675
+[2025-03-28 10:23:21] (model.py 527): INFO 0.7675 -> 0.2023
+[2025-03-28 10:23:21] (model.py 476): INFO Pseudo-label range: [0, 64]
+[2025-03-28 10:23:21] (model.py 477): INFO Unique pseudo-labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 13, 19, 27, 28, 32, 37, 47, 56, 61, 62, 63, 64]
+[2025-03-28 10:23:21] (model.py 478): INFO Pseudo-label distribution: [292, 455, 249, 229, 537, 161, 265, 336, 276, 508, 57, 0, 0, 87, 0, 0, 0, 0, 0, 28, 0, 0, 0, 0, 0, 0, 0, 147, 19, 0, 0, 0, 96, 0, 0, 0, 0, 198, 0, 0, 0, 0, 0, 0, 0, 0, 0, 31, 0, 0, 0, 0, 0, 0, 0, 0, 109, 0, 0, 0, 0, 112, 78, 66, 29]
+[2025-03-28 10:23:21] (model.py 337): INFO Source label range: [8, 9]
+[2025-03-28 10:23:21] (model.py 338): INFO Target visual label range: [1, 63]
+[2025-03-28 10:23:21] (model.py 339): INFO Number of classes: 65
+[2025-03-28 10:23:22] (model.py 385): INFO 
+loss vis_celoss: 1.4686 (75) 
+loss txt_celoss: 18.3973 (75) 
+loss discri_loss: 0.0045 (75) 
+
+[2025-03-28 10:23:22] (model.py 460): INFO Epoch 12 tar: linearAcc=0.2316, promptAcc=0.8994, mixAcc=0.8953
+[2025-03-28 10:23:22] (model.py 527): INFO 0.8953 -> 0.1095
+[2025-03-28 10:23:22] (model.py 476): INFO Pseudo-label range: [0, 9]
+[2025-03-28 10:23:22] (model.py 477): INFO Unique pseudo-labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[2025-03-28 10:23:22] (model.py 478): INFO Pseudo-label distribution: [21, 38, 18, 48, 69, 70, 27, 4, 12, 4058]
+[2025-03-28 10:23:22] (model.py 337): INFO Source label range: [2, 9]
+[2025-03-28 10:23:22] (model.py 338): INFO Target visual label range: [2, 9]
+[2025-03-28 10:23:22] (model.py 339): INFO Number of classes: 65
+[2025-03-28 10:23:23] (model.py 385): INFO 
+loss vis_celoss: 0.5304 (75) 
+loss txt_celoss: 18.3196 (75) 
+loss discri_loss: 0.0044 (75) 
+
+[2025-03-28 10:23:23] (model.py 460): INFO Epoch 13 tar: linearAcc=0.8987, promptAcc=0.8784, mixAcc=0.8873
+[2025-03-28 10:23:24] (model.py 527): INFO 0.8873 -> 0.2564
+[2025-03-28 10:23:24] (model.py 476): INFO Pseudo-label range: [0, 63]
+[2025-03-28 10:23:24] (model.py 477): INFO Unique pseudo-labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 13, 19, 27, 28, 32, 37, 47, 56, 61, 62, 63]
+[2025-03-28 10:23:24] (model.py 478): INFO Pseudo-label distribution: [402, 320, 195, 158, 399, 192, 178, 230, 284, 773, 70, 0, 0, 84, 0, 0, 0, 0, 0, 75, 0, 0, 0, 0, 0, 0, 0, 86, 127, 0, 0, 0, 135, 0, 0, 0, 0, 228, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 0, 0, 127, 0, 0, 0, 0, 63, 53, 179]
+[2025-03-28 10:23:24] (model.py 337): INFO Source label range: [1, 9]
+[2025-03-28 10:23:24] (model.py 338): INFO Target visual label range: [0, 63]
+[2025-03-28 10:23:24] (model.py 339): INFO Number of classes: 65
+[2025-03-28 10:23:25] (model.py 385): INFO 
+loss vis_celoss: 1.3561 (75) 
+loss txt_celoss: 18.3430 (75) 
+loss discri_loss: 0.0043 (75) 
+
+[2025-03-28 10:23:25] (model.py 460): INFO Epoch 14 tar: linearAcc=0.3721, promptAcc=0.8499, mixAcc=0.8362
+[2025-03-28 10:23:25] (model.py 527): INFO 0.8362 -> 0.1200
+[2025-03-28 10:23:25] (model.py 476): INFO Pseudo-label range: [0, 9]
+[2025-03-28 10:23:25] (model.py 477): INFO Unique pseudo-labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[2025-03-28 10:23:25] (model.py 478): INFO Pseudo-label distribution: [218, 65, 49, 55, 141, 185, 54, 21, 32, 3545]
+[2025-03-28 10:23:25] (model.py 337): INFO Source label range: [3, 9]
+[2025-03-28 10:23:25] (model.py 338): INFO Target visual label range: [0, 9]
+[2025-03-28 10:23:25] (model.py 339): INFO Number of classes: 65
+[2025-03-28 10:23:26] (model.py 385): INFO 
+loss vis_celoss: 0.4986 (75) 
+loss txt_celoss: 18.2907 (75) 
+loss discri_loss: 0.0042 (75) 
+
+[2025-03-28 10:23:26] (model.py 460): INFO Epoch 15 tar: linearAcc=0.8575, promptAcc=0.8919, mixAcc=0.8926
+[2025-03-28 10:23:27] (model.py 527): INFO 0.8926 -> 0.2261
+[2025-03-28 10:23:27] (model.py 476): INFO Pseudo-label range: [0, 63]
+[2025-03-28 10:23:27] (model.py 477): INFO Unique pseudo-labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 13, 19, 27, 28, 32, 37, 47, 56, 61, 62, 63]
+[2025-03-28 10:23:27] (model.py 478): INFO Pseudo-label distribution: [492, 313, 271, 180, 436, 162, 155, 280, 318, 638, 67, 0, 0, 61, 0, 0, 0, 0, 0, 31, 0, 0, 0, 0, 0, 0, 0, 80, 130, 0, 0, 0, 202, 0, 0, 0, 0, 149, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 0, 108, 0, 0, 0, 0, 96, 114, 72]
+[2025-03-28 10:23:27] (model.py 337): INFO Source label range: [2, 9]
+[2025-03-28 10:23:27] (model.py 338): INFO Target visual label range: [0, 56]
+[2025-03-28 10:23:27] (model.py 339): INFO Number of classes: 65
+[2025-03-28 10:23:27] (model.py 385): INFO 
+loss vis_celoss: 1.2368 (75) 
+loss txt_celoss: 18.3263 (75) 
+loss discri_loss: 0.0041 (75) 
+
+[2025-03-28 10:23:27] (model.py 460): INFO Epoch 16 tar: linearAcc=0.2788, promptAcc=0.8580, mixAcc=0.8412
+[2025-03-28 10:23:28] (model.py 527): INFO 0.8412 -> 0.1194
+[2025-03-28 10:23:28] (model.py 476): INFO Pseudo-label range: [0, 37]
+[2025-03-28 10:23:28] (model.py 477): INFO Unique pseudo-labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 37]
+[2025-03-28 10:23:28] (model.py 478): INFO Pseudo-label distribution: [179, 62, 23, 61, 153, 158, 65, 10, 13, 3639, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2]
+[2025-03-28 10:23:28] (model.py 337): INFO Source label range: [1, 9]
+[2025-03-28 10:23:28] (model.py 338): INFO Target visual label range: [0, 9]
+[2025-03-28 10:23:28] (model.py 339): INFO Number of classes: 65
+[2025-03-28 10:23:29] (model.py 385): INFO 
+loss vis_celoss: 0.5123 (75) 
+loss txt_celoss: 18.3510 (75) 
+loss discri_loss: 0.0041 (75) 
+
+[2025-03-28 10:23:29] (model.py 460): INFO Epoch 17 tar: linearAcc=0.8701, promptAcc=0.8907, mixAcc=0.8905
+[2025-03-28 10:23:30] (model.py 527): INFO 0.8905 -> 0.2364
+[2025-03-28 10:23:30] (model.py 476): INFO Pseudo-label range: [0, 63]
+[2025-03-28 10:23:30] (model.py 477): INFO Unique pseudo-labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 13, 19, 27, 28, 32, 37, 47, 56, 61, 62, 63]
+[2025-03-28 10:23:30] (model.py 478): INFO Pseudo-label distribution: [490, 333, 304, 209, 452, 210, 122, 284, 298, 676, 144, 0, 0, 66, 0, 0, 0, 0, 0, 43, 0, 0, 0, 0, 0, 0, 0, 51, 1, 0, 0, 0, 43, 0, 0, 0, 0, 220, 0, 0, 0, 0, 0, 0, 0, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 144, 0, 0, 0, 0, 71, 101, 83]
+[2025-03-28 10:23:30] (model.py 337): INFO Source label range: [1, 9]
+[2025-03-28 10:23:30] (model.py 338): INFO Target visual label range: [0, 62]
+[2025-03-28 10:23:30] (model.py 339): INFO Number of classes: 65
+[2025-03-28 10:23:30] (model.py 385): INFO 
+loss vis_celoss: 1.1988 (75) 
+loss txt_celoss: 18.3184 (75) 
+loss discri_loss: 0.0040 (75) 
+
+[2025-03-28 10:23:30] (model.py 460): INFO Epoch 18 tar: linearAcc=0.2518, promptAcc=0.8616, mixAcc=0.8511
+[2025-03-28 10:23:31] (model.py 527): INFO 0.8511 -> 0.1061
+[2025-03-28 10:23:31] (model.py 476): INFO Pseudo-label range: [0, 9]
+[2025-03-28 10:23:31] (model.py 477): INFO Unique pseudo-labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[2025-03-28 10:23:31] (model.py 478): INFO Pseudo-label distribution: [266, 45, 19, 40, 106, 106, 37, 6, 9, 3731]
+[2025-03-28 10:23:31] (model.py 337): INFO Source label range: [0, 9]
+[2025-03-28 10:23:31] (model.py 338): INFO Target visual label range: [0, 9]
+[2025-03-28 10:23:31] (model.py 339): INFO Number of classes: 65
+[2025-03-28 10:23:32] (model.py 385): INFO 
+loss vis_celoss: 0.5267 (75) 
+loss txt_celoss: 18.3105 (75) 
+loss discri_loss: 0.0039 (75) 
+
+[2025-03-28 10:23:32] (model.py 460): INFO Epoch 19 tar: linearAcc=0.8525, promptAcc=0.8838, mixAcc=0.8809
+[2025-03-28 10:23:33] (model.py 527): INFO 0.8809 -> 0.2014
+[2025-03-28 10:23:33] (model.py 476): INFO Pseudo-label range: [0, 63]
+[2025-03-28 10:23:33] (model.py 477): INFO Unique pseudo-labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 13, 19, 27, 28, 32, 37, 47, 56, 61, 62, 63]
+[2025-03-28 10:23:33] (model.py 478): INFO Pseudo-label distribution: [557, 318, 253, 178, 433, 187, 116, 272, 359, 526, 94, 0, 0, 79, 0, 0, 0, 0, 0, 38, 0, 0, 0, 0, 0, 0, 0, 53, 95, 0, 0, 0, 215, 0, 0, 0, 0, 122, 0, 0, 0, 0, 0, 0, 0, 0, 0, 36, 0, 0, 0, 0, 0, 0, 0, 0, 140, 0, 0, 0, 0, 82, 103, 109]
+[2025-03-28 10:23:33] (model.py 337): INFO Source label range: [1, 9]
+[2025-03-28 10:23:33] (model.py 338): INFO Target visual label range: [0, 63]
+[2025-03-28 10:23:33] (model.py 339): INFO Number of classes: 65
+[2025-03-28 10:23:33] (model.py 385): INFO 
+loss vis_celoss: 1.3250 (75) 
+loss txt_celoss: 18.3047 (75) 
+loss discri_loss: 0.0039 (75) 
+
+[2025-03-28 10:23:34] (model.py 460): INFO Epoch 20 tar: linearAcc=0.2806, promptAcc=0.8316, mixAcc=0.8119
+[2025-03-28 10:23:34] (model.py 527): INFO 0.8119 -> 0.1132
+[2025-03-28 10:23:34] (model.py 476): INFO Pseudo-label range: [0, 37]
+[2025-03-28 10:23:34] (model.py 477): INFO Unique pseudo-labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 37]
+[2025-03-28 10:23:34] (model.py 478): INFO Pseudo-label distribution: [167, 115, 27, 59, 223, 175, 49, 28, 60, 3460, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2]
+[2025-03-28 10:23:34] (model.py 337): INFO Source label range: [2, 9]
+[2025-03-28 10:23:34] (model.py 338): INFO Target visual label range: [0, 9]
+[2025-03-28 10:23:34] (model.py 339): INFO Number of classes: 65
+[2025-03-28 10:23:35] (model.py 385): INFO 
+loss vis_celoss: 0.6036 (75) 
+loss txt_celoss: 18.3513 (75) 
+loss discri_loss: 0.0038 (75) 
+
+[2025-03-28 10:23:35] (model.py 460): INFO Epoch 21 tar: linearAcc=0.8337, promptAcc=0.8855, mixAcc=0.8827
+[2025-03-28 10:23:36] (model.py 527): INFO 0.8827 -> 0.2057
+[2025-03-28 10:23:36] (model.py 476): INFO Pseudo-label range: [0, 63]
+[2025-03-28 10:23:36] (model.py 477): INFO Unique pseudo-labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 13, 19, 27, 28, 32, 37, 47, 56, 61, 62, 63]
+[2025-03-28 10:23:36] (model.py 478): INFO Pseudo-label distribution: [466, 401, 243, 193, 448, 285, 111, 256, 282, 550, 119, 0, 0, 45, 0, 0, 0, 0, 0, 85, 0, 0, 0, 0, 0, 0, 0, 48, 71, 0, 0, 0, 177, 0, 0, 0, 0, 128, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 0, 102, 0, 0, 0, 0, 93, 102, 150]
+[2025-03-28 10:23:36] (model.py 337): INFO Source label range: [2, 9]
+[2025-03-28 10:23:36] (model.py 338): INFO Target visual label range: [0, 63]
+[2025-03-28 10:23:36] (model.py 339): INFO Number of classes: 65
+[2025-03-28 10:23:36] (model.py 385): INFO 
+loss vis_celoss: 1.1768 (75) 
+loss txt_celoss: 18.2900 (75) 
+loss discri_loss: 0.0038 (75) 
+
+[2025-03-28 10:23:37] (model.py 460): INFO Epoch 22 tar: linearAcc=0.2293, promptAcc=0.8935, mixAcc=0.8859
+[2025-03-28 10:23:37] (model.py 527): INFO 0.8859 -> 0.1219
+[2025-03-28 10:23:37] (model.py 476): INFO Pseudo-label range: [0, 9]
+[2025-03-28 10:23:37] (model.py 477): INFO Unique pseudo-labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[2025-03-28 10:23:37] (model.py 478): INFO Pseudo-label distribution: [88, 37, 13, 43, 73, 57, 25, 3, 8, 4018]
+[2025-03-28 10:23:37] (model.py 337): INFO Source label range: [3, 9]
+[2025-03-28 10:23:37] (model.py 338): INFO Target visual label range: [0, 9]
+[2025-03-28 10:23:37] (model.py 339): INFO Number of classes: 65
+[2025-03-28 10:23:38] (model.py 385): INFO 
+loss vis_celoss: 0.5928 (75) 
+loss txt_celoss: 18.3088 (75) 
+loss discri_loss: 0.0037 (75) 
+
+[2025-03-28 10:23:38] (model.py 460): INFO Epoch 23 tar: linearAcc=0.8939, promptAcc=0.8637, mixAcc=0.8733
+[2025-03-28 10:23:39] (model.py 527): INFO 0.8733 -> 0.2362
+[2025-03-28 10:23:39] (model.py 476): INFO Pseudo-label range: [0, 64]
+[2025-03-28 10:23:39] (model.py 477): INFO Unique pseudo-labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 13, 19, 27, 28, 32, 37, 47, 56, 61, 62, 63, 64]
+[2025-03-28 10:23:39] (model.py 478): INFO Pseudo-label distribution: [519, 268, 188, 189, 415, 205, 80, 251, 360, 697, 124, 0, 0, 50, 0, 0, 0, 0, 0, 22, 0, 0, 0, 0, 0, 0, 0, 60, 142, 0, 0, 0, 74, 0, 0, 0, 0, 190, 0, 0, 0, 0, 0, 0, 0, 0, 0, 34, 0, 0, 0, 0, 0, 0, 0, 0, 138, 0, 0, 0, 0, 84, 93, 97, 85]
+[2025-03-28 10:23:39] (model.py 337): INFO Source label range: [2, 9]
+[2025-03-28 10:23:39] (model.py 338): INFO Target visual label range: [0, 62]
+[2025-03-28 10:23:39] (model.py 339): INFO Number of classes: 65
+[2025-03-28 10:23:40] (model.py 385): INFO 
+loss vis_celoss: 1.4371 (75) 
+loss txt_celoss: 18.2930 (75) 
+loss discri_loss: 0.0037 (75) 
+
+[2025-03-28 10:23:40] (model.py 460): INFO Epoch 24 tar: linearAcc=0.3116, promptAcc=0.8186, mixAcc=0.8076
+[2025-03-28 10:23:40] (model.py 527): INFO 0.8076 -> 0.1322
+[2025-03-28 10:23:40] (model.py 476): INFO Pseudo-label range: [0, 37]
+[2025-03-28 10:23:40] (model.py 477): INFO Unique pseudo-labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 37]
+[2025-03-28 10:23:40] (model.py 478): INFO Pseudo-label distribution: [416, 52, 19, 62, 160, 123, 31, 14, 18, 3469, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+[2025-03-28 10:23:40] (model.py 337): INFO Source label range: [2, 9]
+[2025-03-28 10:23:40] (model.py 338): INFO Target visual label range: [0, 9]
+[2025-03-28 10:23:40] (model.py 339): INFO Number of classes: 65
+[2025-03-28 10:23:41] (model.py 385): INFO 
+loss vis_celoss: 0.5382 (75) 
+loss txt_celoss: 18.3494 (75) 
+loss discri_loss: 0.0036 (75) 
+
+[2025-03-28 10:23:41] (model.py 460): INFO Epoch 25 tar: linearAcc=0.8302, promptAcc=0.8680, mixAcc=0.8635
+[2025-03-28 10:23:42] (model.py 527): INFO 0.8635 -> 0.2337
+[2025-03-28 10:23:42] (model.py 476): INFO Pseudo-label range: [0, 64]
+[2025-03-28 10:23:42] (model.py 477): INFO Unique pseudo-labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 13, 19, 27, 28, 32, 37, 47, 56, 61, 62, 63, 64]
+[2025-03-28 10:23:42] (model.py 478): INFO Pseudo-label distribution: [547, 265, 187, 194, 437, 248, 72, 239, 286, 674, 101, 0, 0, 54, 0, 0, 0, 0, 0, 72, 0, 0, 0, 0, 0, 0, 0, 46, 90, 0, 0, 0, 174, 0, 0, 0, 0, 170, 0, 0, 0, 0, 0, 0, 0, 0, 0, 43, 0, 0, 0, 0, 0, 0, 0, 0, 110, 0, 0, 0, 0, 74, 82, 100, 100]
+[2025-03-28 10:23:42] (model.py 337): INFO Source label range: [1, 9]
+[2025-03-28 10:23:42] (model.py 338): INFO Target visual label range: [0, 64]
+[2025-03-28 10:23:42] (model.py 339): INFO Number of classes: 65
+[2025-03-28 10:23:43] (model.py 385): INFO 
+loss vis_celoss: 1.2034 (75) 
+loss txt_celoss: 18.3501 (75) 
+loss discri_loss: 0.0036 (75) 
+
+[2025-03-28 10:23:43] (model.py 460): INFO Epoch 26 tar: linearAcc=0.3200, promptAcc=0.8932, mixAcc=0.8889
+[2025-03-28 10:23:43] (model.py 527): INFO 0.8889 -> 0.1549
+[2025-03-28 10:23:43] (model.py 476): INFO Pseudo-label range: [0, 9]
+[2025-03-28 10:23:43] (model.py 477): INFO Unique pseudo-labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[2025-03-28 10:23:43] (model.py 478): INFO Pseudo-label distribution: [78, 32, 19, 39, 28, 37, 23, 1, 9, 4099]
+[2025-03-28 10:23:43] (model.py 337): INFO Source label range: [2, 9]
+[2025-03-28 10:23:43] (model.py 338): INFO Target visual label range: [5, 9]
+[2025-03-28 10:23:43] (model.py 339): INFO Number of classes: 65
+[2025-03-28 10:23:44] (model.py 385): INFO 
+loss vis_celoss: 0.5559 (75) 
+loss txt_celoss: 18.3385 (75) 
+loss discri_loss: 0.0035 (75) 
+
+[2025-03-28 10:23:44] (model.py 460): INFO Epoch 27 tar: linearAcc=0.8884, promptAcc=0.8806, mixAcc=0.8832
+[2025-03-28 10:23:45] (model.py 527): INFO 0.8832 -> 0.2241
+[2025-03-28 10:23:45] (model.py 476): INFO Pseudo-label range: [0, 64]
+[2025-03-28 10:23:45] (model.py 477): INFO Unique pseudo-labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 13, 19, 27, 28, 32, 37, 47, 56, 61, 62, 63, 64]
+[2025-03-28 10:23:45] (model.py 478): INFO Pseudo-label distribution: [447, 248, 184, 189, 430, 194, 69, 238, 286, 640, 90, 0, 0, 76, 0, 0, 0, 0, 0, 93, 0, 0, 0, 0, 0, 0, 0, 62, 151, 0, 0, 0, 162, 0, 0, 0, 0, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 62, 0, 0, 0, 0, 0, 0, 0, 0, 142, 0, 0, 0, 0, 73, 113, 107, 115]
+[2025-03-28 10:23:45] (model.py 337): INFO Source label range: [3, 9]
+[2025-03-28 10:23:45] (model.py 338): INFO Target visual label range: [0, 64]
+[2025-03-28 10:23:45] (model.py 339): INFO Number of classes: 65
+[2025-03-28 10:23:45] (model.py 385): INFO 
+loss vis_celoss: 1.3605 (75) 
+loss txt_celoss: 18.2928 (75) 
+loss discri_loss: 0.0035 (75) 
+
+[2025-03-28 10:23:46] (model.py 460): INFO Epoch 28 tar: linearAcc=0.3145, promptAcc=0.8944, mixAcc=0.8916
+[2025-03-28 10:23:46] (model.py 527): INFO 0.8916 -> 0.1583
+[2025-03-28 10:23:46] (model.py 476): INFO Pseudo-label range: [0, 9]
+[2025-03-28 10:23:46] (model.py 477): INFO Unique pseudo-labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[2025-03-28 10:23:46] (model.py 478): INFO Pseudo-label distribution: [46, 32, 17, 40, 52, 63, 28, 1, 6, 4080]
+[2025-03-28 10:23:46] (model.py 337): INFO Source label range: [1, 9]
+[2025-03-28 10:23:46] (model.py 338): INFO Target visual label range: [0, 9]
+[2025-03-28 10:23:46] (model.py 339): INFO Number of classes: 65
+[2025-03-28 10:23:47] (model.py 385): INFO 
+loss vis_celoss: 0.5544 (75) 
+loss txt_celoss: 18.2848 (75) 
+loss discri_loss: 0.0034 (75) 
+
+[2025-03-28 10:23:47] (model.py 460): INFO Epoch 29 tar: linearAcc=0.8921, promptAcc=0.8499, mixAcc=0.8625
+[2025-03-28 10:23:48] (model.py 527): INFO 0.8625 -> 0.2719
+[2025-03-28 10:23:48] (model.py 476): INFO Pseudo-label range: [0, 64]
+[2025-03-28 10:23:48] (model.py 477): INFO Unique pseudo-labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 13, 19, 27, 28, 32, 37, 47, 56, 61, 62, 63, 64]
+[2025-03-28 10:23:48] (model.py 478): INFO Pseudo-label distribution: [464, 254, 205, 189, 360, 126, 73, 239, 259, 859, 91, 0, 0, 50, 0, 0, 0, 0, 0, 71, 0, 0, 0, 0, 0, 0, 0, 62, 153, 0, 0, 0, 124, 0, 0, 0, 0, 207, 0, 0, 0, 0, 0, 0, 0, 0, 0, 41, 0, 0, 0, 0, 0, 0, 0, 0, 131, 0, 0, 0, 0, 79, 117, 96, 115]
+[2025-03-28 10:23:48] (model.py 337): INFO Source label range: [2, 9]
+[2025-03-28 10:23:48] (model.py 338): INFO Target visual label range: [0, 64]
+[2025-03-28 10:23:48] (model.py 339): INFO Number of classes: 65
+[2025-03-28 10:23:48] (model.py 385): INFO 
+loss vis_celoss: 1.3697 (75) 
+loss txt_celoss: 18.2877 (75) 
+loss discri_loss: 0.0034 (75) 
+
+[2025-03-28 10:23:49] (model.py 460): INFO Epoch 30 tar: linearAcc=0.3661, promptAcc=0.8694, mixAcc=0.8619
+[2025-03-28 10:23:49] (model.py 527): INFO 0.8619 -> 0.1331
+[2025-03-28 10:23:49] (model.py 476): INFO Pseudo-label range: [0, 9]
+[2025-03-28 10:23:49] (model.py 477): INFO Unique pseudo-labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[2025-03-28 10:23:49] (model.py 478): INFO Pseudo-label distribution: [170, 47, 18, 47, 90, 110, 38, 5, 12, 3828]
+[2025-03-28 10:23:49] (model.py 337): INFO Source label range: [4, 9]
+[2025-03-28 10:23:49] (model.py 338): INFO Target visual label range: [0, 9]
+[2025-03-28 10:23:49] (model.py 339): INFO Number of classes: 65
+[2025-03-28 10:23:50] (model.py 385): INFO 
+loss vis_celoss: 0.4770 (75) 
+loss txt_celoss: 18.3114 (75) 
+loss discri_loss: 0.0033 (75) 
+
+[2025-03-28 10:23:50] (model.py 460): INFO Epoch 31 tar: linearAcc=0.8582, promptAcc=0.8648, mixAcc=0.8641
+[2025-03-28 10:23:51] (model.py 527): INFO 0.8641 -> 0.2357
+[2025-03-28 10:23:51] (model.py 476): INFO Pseudo-label range: [0, 64]
+[2025-03-28 10:23:51] (model.py 477): INFO Unique pseudo-labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 13, 19, 27, 28, 32, 37, 47, 56, 61, 62, 63, 64]
+[2025-03-28 10:23:51] (model.py 478): INFO Pseudo-label distribution: [517, 248, 198, 213, 408, 127, 77, 265, 229, 689, 102, 0, 0, 47, 0, 0, 0, 0, 0, 78, 0, 0, 0, 0, 0, 0, 0, 73, 187, 0, 0, 0, 134, 0, 0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 0, 0, 36, 0, 0, 0, 0, 0, 0, 0, 0, 136, 0, 0, 0, 0, 68, 115, 119, 108]
+[2025-03-28 10:23:51] (model.py 337): INFO Source label range: [2, 9]
+[2025-03-28 10:23:51] (model.py 338): INFO Target visual label range: [0, 64]
+[2025-03-28 10:23:51] (model.py 339): INFO Number of classes: 65
+[2025-03-28 10:23:51] (model.py 385): INFO 
+loss vis_celoss: 1.2192 (75) 
+loss txt_celoss: 18.3411 (75) 
+loss discri_loss: 0.0033 (75) 
+
+[2025-03-28 10:23:52] (model.py 460): INFO Epoch 32 tar: linearAcc=0.3061, promptAcc=0.8229, mixAcc=0.8133
+[2025-03-28 10:23:52] (model.py 527): INFO 0.8133 -> 0.1553
+[2025-03-28 10:23:52] (model.py 476): INFO Pseudo-label range: [0, 9]
+[2025-03-28 10:23:52] (model.py 477): INFO Unique pseudo-labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[2025-03-28 10:23:52] (model.py 478): INFO Pseudo-label distribution: [471, 34, 17, 49, 95, 58, 49, 6, 15, 3571]
+[2025-03-28 10:23:52] (model.py 337): INFO Source label range: [2, 9]
+[2025-03-28 10:23:52] (model.py 338): INFO Target visual label range: [0, 9]
+[2025-03-28 10:23:52] (model.py 339): INFO Number of classes: 65
+[2025-03-28 10:23:53] (model.py 385): INFO 
+loss vis_celoss: 0.5640 (75) 
+loss txt_celoss: 18.3004 (75) 
+loss discri_loss: 0.0033 (75) 
+
+[2025-03-28 10:23:53] (model.py 460): INFO Epoch 33 tar: linearAcc=0.8328, promptAcc=0.8440, mixAcc=0.8486
+[2025-03-28 10:23:54] (model.py 527): INFO 0.8486 -> 0.2373
+[2025-03-28 10:23:54] (model.py 476): INFO Pseudo-label range: [0, 64]
+[2025-03-28 10:23:54] (model.py 477): INFO Unique pseudo-labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 13, 19, 27, 28, 32, 37, 47, 56, 61, 62, 63, 64]
+[2025-03-28 10:23:54] (model.py 478): INFO Pseudo-label distribution: [578, 236, 171, 218, 415, 181, 134, 267, 289, 691, 86, 0, 0, 58, 0, 0, 0, 0, 0, 23, 0, 0, 0, 0, 0, 0, 0, 55, 124, 0, 0, 0, 160, 0, 0, 0, 0, 187, 0, 0, 0, 0, 0, 0, 0, 0, 0, 21, 0, 0, 0, 0, 0, 0, 0, 0, 121, 0, 0, 0, 0, 59, 94, 67, 130]
+[2025-03-28 10:23:54] (model.py 337): INFO Source label range: [2, 9]
+[2025-03-28 10:23:54] (model.py 338): INFO Target visual label range: [0, 62]
+[2025-03-28 10:23:54] (model.py 339): INFO Number of classes: 65
+[2025-03-28 10:23:55] (model.py 385): INFO 
+loss vis_celoss: 1.2051 (75) 
+loss txt_celoss: 18.2892 (75) 
+loss discri_loss: 0.0032 (75) 
+
+[2025-03-28 10:23:55] (model.py 460): INFO Epoch 34 tar: linearAcc=0.2930, promptAcc=0.8740, mixAcc=0.8616
+[2025-03-28 10:23:55] (model.py 527): INFO 0.8616 -> 0.1473
+[2025-03-28 10:23:55] (model.py 476): INFO Pseudo-label range: [0, 9]
+[2025-03-28 10:23:55] (model.py 477): INFO Unique pseudo-labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[2025-03-28 10:23:55] (model.py 478): INFO Pseudo-label distribution: [193, 35, 16, 43, 78, 80, 39, 3, 11, 3867]
+[2025-03-28 10:23:55] (model.py 337): INFO Source label range: [0, 9]
+[2025-03-28 10:23:55] (model.py 338): INFO Target visual label range: [0, 9]
+[2025-03-28 10:23:55] (model.py 339): INFO Number of classes: 65
+[2025-03-28 10:23:56] (model.py 385): INFO 
+loss vis_celoss: 0.5288 (75) 
+loss txt_celoss: 18.2922 (75) 
+loss discri_loss: 0.0032 (75) 
+
+[2025-03-28 10:23:56] (model.py 460): INFO Epoch 35 tar: linearAcc=0.8694, promptAcc=0.8717, mixAcc=0.8726
+[2025-03-28 10:23:57] (model.py 527): INFO 0.8726 -> 0.2325
+[2025-03-28 10:23:57] (model.py 476): INFO Pseudo-label range: [0, 64]
+[2025-03-28 10:23:57] (model.py 477): INFO Unique pseudo-labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 13, 19, 27, 28, 32, 37, 47, 56, 61, 62, 63, 64]
+[2025-03-28 10:23:57] (model.py 478): INFO Pseudo-label distribution: [523, 234, 181, 212, 375, 129, 67, 273, 275, 681, 86, 0, 0, 41, 0, 0, 0, 0, 0, 38, 0, 0, 0, 0, 0, 0, 0, 87, 204, 0, 0, 0, 164, 0, 0, 0, 0, 197, 0, 0, 0, 0, 0, 0, 0, 0, 0, 26, 0, 0, 0, 0, 0, 0, 0, 0, 125, 0, 0, 0, 0, 55, 107, 138, 147]
+[2025-03-28 10:23:57] (model.py 337): INFO Source label range: [1, 9]
+[2025-03-28 10:23:57] (model.py 338): INFO Target visual label range: [0, 63]
+[2025-03-28 10:23:57] (model.py 339): INFO Number of classes: 65
+[2025-03-28 10:23:57] (model.py 385): INFO 
+loss vis_celoss: 1.2752 (75) 
+loss txt_celoss: 18.3615 (75) 
+loss discri_loss: 0.0032 (75) 
+
+[2025-03-28 10:23:58] (model.py 460): INFO Epoch 36 tar: linearAcc=0.3148, promptAcc=0.8564, mixAcc=0.8454
+[2025-03-28 10:23:58] (model.py 527): INFO 0.8454 -> 0.1638
+[2025-03-28 10:23:58] (model.py 476): INFO Pseudo-label range: [0, 9]
+[2025-03-28 10:23:58] (model.py 477): INFO Unique pseudo-labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[2025-03-28 10:23:58] (model.py 478): INFO Pseudo-label distribution: [260, 38, 16, 46, 109, 83, 40, 7, 11, 3755]
+[2025-03-28 10:23:58] (model.py 337): INFO Source label range: [2, 9]
+[2025-03-28 10:23:58] (model.py 338): INFO Target visual label range: [0, 9]
+[2025-03-28 10:23:58] (model.py 339): INFO Number of classes: 65
+[2025-03-28 10:23:59] (model.py 385): INFO 
+loss vis_celoss: 0.5083 (75) 
+loss txt_celoss: 18.2972 (75) 
+loss discri_loss: 0.0031 (75) 
+
+[2025-03-28 10:23:59] (model.py 460): INFO Epoch 37 tar: linearAcc=0.8515, promptAcc=0.8573, mixAcc=0.8586
+[2025-03-28 10:24:00] (model.py 527): INFO 0.8586 -> 0.2442
+[2025-03-28 10:24:00] (model.py 476): INFO Pseudo-label range: [0, 64]
+[2025-03-28 10:24:00] (model.py 477): INFO Unique pseudo-labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 13, 19, 27, 28, 32, 37, 47, 56, 61, 62, 63, 64]
+[2025-03-28 10:24:00] (model.py 478): INFO Pseudo-label distribution: [545, 228, 173, 238, 367, 164, 81, 262, 259, 737, 50, 0, 0, 31, 0, 0, 0, 0, 0, 50, 0, 0, 0, 0, 0, 0, 0, 67, 173, 0, 0, 0, 216, 0, 0, 0, 0, 184, 0, 0, 0, 0, 0, 0, 0, 0, 0, 22, 0, 0, 0, 0, 0, 0, 0, 0, 128, 0, 0, 0, 0, 55, 82, 124, 129]
+[2025-03-28 10:24:00] (model.py 337): INFO Source label range: [1, 9]
+[2025-03-28 10:24:00] (model.py 338): INFO Target visual label range: [0, 63]
+[2025-03-28 10:24:00] (model.py 339): INFO Number of classes: 65
+[2025-03-28 10:24:00] (model.py 385): INFO 
+loss vis_celoss: 1.1695 (75) 
+loss txt_celoss: 18.2783 (75) 
+loss discri_loss: 0.0031 (75) 
+
+[2025-03-28 10:24:01] (model.py 460): INFO Epoch 38 tar: linearAcc=0.2809, promptAcc=0.8511, mixAcc=0.8405
+[2025-03-28 10:24:01] (model.py 527): INFO 0.8405 -> 0.1640
+[2025-03-28 10:24:01] (model.py 476): INFO Pseudo-label range: [0, 9]
+[2025-03-28 10:24:01] (model.py 477): INFO Unique pseudo-labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[2025-03-28 10:24:01] (model.py 478): INFO Pseudo-label distribution: [278, 41, 16, 49, 113, 113, 39, 8, 12, 3696]
+[2025-03-28 10:24:01] (model.py 337): INFO Source label range: [1, 9]
+[2025-03-28 10:24:01] (model.py 338): INFO Target visual label range: [0, 9]
+[2025-03-28 10:24:01] (model.py 339): INFO Number of classes: 65
+[2025-03-28 10:24:02] (model.py 385): INFO 
+loss vis_celoss: 0.5148 (75) 
+loss txt_celoss: 18.3095 (75) 
+loss discri_loss: 0.0031 (75) 
+
+[2025-03-28 10:24:02] (model.py 460): INFO Epoch 39 tar: linearAcc=0.8566, promptAcc=0.8312, mixAcc=0.8389
+[2025-03-28 10:24:03] (model.py 527): INFO 0.8389 -> 0.2504
+[2025-03-28 10:24:03] (model.py 476): INFO Pseudo-label range: [0, 64]
+[2025-03-28 10:24:03] (model.py 477): INFO Unique pseudo-labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 13, 19, 27, 28, 31, 32, 37, 47, 56, 61, 62, 63, 64]
+[2025-03-28 10:24:03] (model.py 478): INFO Pseudo-label distribution: [586, 218, 158, 213, 377, 192, 99, 263, 264, 759, 16, 0, 0, 44, 0, 0, 0, 0, 0, 21, 0, 0, 0, 0, 0, 0, 0, 60, 174, 0, 0, 63, 230, 0, 0, 0, 0, 177, 0, 0, 0, 0, 0, 0, 0, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 92, 0, 0, 0, 0, 82, 80, 82, 95]
+[2025-03-28 10:24:03] (model.py 337): INFO Source label range: [2, 9]
+[2025-03-28 10:24:03] (model.py 338): INFO Target visual label range: [0, 64]
+[2025-03-28 10:24:03] (model.py 339): INFO Number of classes: 65
+[2025-03-28 10:24:03] (model.py 385): INFO 
+loss vis_celoss: 1.1743 (75) 
+loss txt_celoss: 18.2926 (75) 
+loss discri_loss: 0.0030 (75) 
+
+[2025-03-28 10:24:04] (model.py 460): INFO Epoch 40 tar: linearAcc=0.3125, promptAcc=0.8735, mixAcc=0.8603
+[2025-03-28 10:24:04] (model.py 527): INFO 0.8603 -> 0.1688
+[2025-03-28 10:24:04] (model.py 476): INFO Pseudo-label range: [0, 9]
+[2025-03-28 10:24:04] (model.py 477): INFO Unique pseudo-labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[2025-03-28 10:24:04] (model.py 478): INFO Pseudo-label distribution: [201, 33, 18, 43, 72, 90, 32, 7, 11, 3858]
+[2025-03-28 10:24:04] (model.py 337): INFO Source label range: [2, 9]
+[2025-03-28 10:24:04] (model.py 338): INFO Target visual label range: [4, 9]
+[2025-03-28 10:24:04] (model.py 339): INFO Number of classes: 65
+[2025-03-28 10:24:05] (model.py 385): INFO 
+loss vis_celoss: 0.5333 (75) 
+loss txt_celoss: 18.3309 (75) 
+loss discri_loss: 0.0030 (75) 
+
+[2025-03-28 10:24:05] (model.py 460): INFO Epoch 41 tar: linearAcc=0.8699, promptAcc=0.8646, mixAcc=0.8667
+[2025-03-28 10:24:06] (model.py 527): INFO 0.8667 -> 0.2774
+[2025-03-28 10:24:06] (model.py 476): INFO Pseudo-label range: [0, 64]
+[2025-03-28 10:24:06] (model.py 477): INFO Unique pseudo-labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 13, 19, 27, 28, 31, 32, 37, 47, 56, 61, 62, 63, 64]
+[2025-03-28 10:24:06] (model.py 478): INFO Pseudo-label distribution: [486, 210, 160, 184, 356, 182, 80, 263, 246, 891, 48, 0, 0, 26, 0, 0, 0, 0, 0, 41, 0, 0, 0, 0, 0, 0, 0, 72, 151, 0, 0, 140, 198, 0, 0, 0, 0, 149, 0, 0, 0, 0, 0, 0, 0, 0, 0, 25, 0, 0, 0, 0, 0, 0, 0, 0, 88, 0, 0, 0, 0, 86, 84, 121, 78]
+[2025-03-28 10:24:06] (model.py 337): INFO Source label range: [3, 9]
+[2025-03-28 10:24:06] (model.py 338): INFO Target visual label range: [0, 64]
+[2025-03-28 10:24:06] (model.py 339): INFO Number of classes: 65
+[2025-03-28 10:24:07] (model.py 385): INFO 
+loss vis_celoss: 1.2328 (75) 
+loss txt_celoss: 18.3195 (75) 
+loss discri_loss: 0.0030 (75) 
+
+[2025-03-28 10:24:07] (model.py 460): INFO Epoch 42 tar: linearAcc=0.3189, promptAcc=0.8907, mixAcc=0.8905
+[2025-03-28 10:24:07] (model.py 527): INFO 0.8905 -> 0.1686
+[2025-03-28 10:24:07] (model.py 476): INFO Pseudo-label range: [0, 9]
+[2025-03-28 10:24:07] (model.py 477): INFO Unique pseudo-labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[2025-03-28 10:24:07] (model.py 478): INFO Pseudo-label distribution: [47, 29, 9, 35, 3, 23, 12, 1, 11, 4195]
+[2025-03-28 10:24:07] (model.py 337): INFO Source label range: [4, 9]
+[2025-03-28 10:24:07] (model.py 338): INFO Target visual label range: [1, 9]
+[2025-03-28 10:24:07] (model.py 339): INFO Number of classes: 65
+[2025-03-28 10:24:08] (model.py 385): INFO 
+loss vis_celoss: 0.5793 (75) 
+loss txt_celoss: 18.3250 (75) 
+loss discri_loss: 0.0029 (75) 
+
+[2025-03-28 10:24:08] (model.py 460): INFO Epoch 43 tar: linearAcc=0.8978, promptAcc=0.7844, mixAcc=0.8296
+[2025-03-28 10:24:09] (model.py 527): INFO 0.8296 -> 0.2701
+[2025-03-28 10:24:09] (model.py 476): INFO Pseudo-label range: [0, 64]
+[2025-03-28 10:24:09] (model.py 477): INFO Unique pseudo-labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 13, 19, 27, 28, 31, 32, 37, 39, 47, 56, 58, 61, 62, 63, 64]
+[2025-03-28 10:24:09] (model.py 478): INFO Pseudo-label distribution: [414, 260, 174, 200, 358, 183, 124, 265, 222, 858, 9, 0, 0, 42, 0, 0, 0, 0, 0, 35, 0, 0, 0, 0, 0, 0, 0, 50, 121, 0, 0, 114, 174, 0, 0, 0, 0, 245, 0, 43, 0, 0, 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 0, 0, 113, 0, 11, 0, 0, 123, 84, 73, 63]
+[2025-03-28 10:24:09] (model.py 337): INFO Source label range: [5, 9]
+[2025-03-28 10:24:09] (model.py 338): INFO Target visual label range: [0, 64]
+[2025-03-28 10:24:09] (model.py 339): INFO Number of classes: 65
+[2025-03-28 10:24:09] (model.py 385): INFO 
+loss vis_celoss: 1.4847 (75) 
+loss txt_celoss: 18.3430 (75) 
+loss discri_loss: 0.0029 (75) 
+
+[2025-03-28 10:24:10] (model.py 460): INFO Epoch 44 tar: linearAcc=0.3950, promptAcc=0.8887, mixAcc=0.8818
+[2025-03-28 10:24:10] (model.py 527): INFO 0.8818 -> 0.1849
+[2025-03-28 10:24:10] (model.py 476): INFO Pseudo-label range: [0, 9]
+[2025-03-28 10:24:10] (model.py 477): INFO Unique pseudo-labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[2025-03-28 10:24:10] (model.py 478): INFO Pseudo-label distribution: [90, 31, 18, 38, 57, 36, 26, 1, 5, 4063]
+[2025-03-28 10:24:10] (model.py 337): INFO Source label range: [2, 9]
+[2025-03-28 10:24:10] (model.py 338): INFO Target visual label range: [0, 9]
+[2025-03-28 10:24:10] (model.py 339): INFO Number of classes: 65
+[2025-03-28 10:24:11] (model.py 385): INFO 
+loss vis_celoss: 0.5540 (75) 
+loss txt_celoss: 18.2704 (75) 
+loss discri_loss: 0.0029 (75) 
+
+[2025-03-28 10:24:11] (model.py 460): INFO Epoch 45 tar: linearAcc=0.8877, promptAcc=0.8784, mixAcc=0.8800
+[2025-03-28 10:24:12] (model.py 527): INFO 0.8800 -> 0.2974
+[2025-03-28 10:24:12] (model.py 476): INFO Pseudo-label range: [0, 64]
+[2025-03-28 10:24:12] (model.py 477): INFO Unique pseudo-labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 13, 19, 27, 28, 31, 32, 37, 47, 56, 61, 62, 63, 64]
+[2025-03-28 10:24:12] (model.py 478): INFO Pseudo-label distribution: [379, 219, 176, 191, 343, 164, 71, 270, 239, 980, 13, 0, 0, 32, 0, 0, 0, 0, 0, 38, 0, 0, 0, 0, 0, 0, 0, 48, 185, 0, 0, 131, 196, 0, 0, 0, 0, 184, 0, 0, 0, 0, 0, 0, 0, 0, 0, 17, 0, 0, 0, 0, 0, 0, 0, 0, 99, 0, 0, 0, 0, 101, 79, 131, 79]
+[2025-03-28 10:24:12] (model.py 337): INFO Source label range: [1, 9]
+[2025-03-28 10:24:12] (model.py 338): INFO Target visual label range: [0, 64]
+[2025-03-28 10:24:12] (model.py 339): INFO Number of classes: 65
+[2025-03-28 10:24:12] (model.py 385): INFO 
+loss vis_celoss: 1.1745 (75) 
+loss txt_celoss: 18.3298 (75) 
+loss discri_loss: 0.0028 (75) 
+
+[2025-03-28 10:24:13] (model.py 460): INFO Epoch 46 tar: linearAcc=0.3837, promptAcc=0.8710, mixAcc=0.8646
+[2025-03-28 10:24:13] (model.py 527): INFO 0.8646 -> 0.1707
+[2025-03-28 10:24:13] (model.py 476): INFO Pseudo-label range: [0, 9]
+[2025-03-28 10:24:13] (model.py 477): INFO Unique pseudo-labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[2025-03-28 10:24:13] (model.py 478): INFO Pseudo-label distribution: [163, 41, 10, 42, 101, 85, 33, 3, 7, 3880]
+[2025-03-28 10:24:13] (model.py 337): INFO Source label range: [4, 9]
+[2025-03-28 10:24:13] (model.py 338): INFO Target visual label range: [2, 9]
+[2025-03-28 10:24:13] (model.py 339): INFO Number of classes: 65
+[2025-03-28 10:24:14] (model.py 385): INFO 
+loss vis_celoss: 0.4870 (75) 
+loss txt_celoss: 18.2717 (75) 
+loss discri_loss: 0.0028 (75) 
+
+[2025-03-28 10:24:14] (model.py 460): INFO Epoch 47 tar: linearAcc=0.8635, promptAcc=0.8614, mixAcc=0.8632
+[2025-03-28 10:24:15] (model.py 527): INFO 0.8632 -> 0.2719
+[2025-03-28 10:24:15] (model.py 476): INFO Pseudo-label range: [0, 64]
+[2025-03-28 10:24:15] (model.py 477): INFO Unique pseudo-labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 13, 19, 27, 28, 31, 32, 37, 47, 56, 61, 62, 63, 64]
+[2025-03-28 10:24:15] (model.py 478): INFO Pseudo-label distribution: [419, 212, 190, 204, 335, 176, 82, 274, 249, 868, 32, 0, 0, 25, 0, 0, 0, 0, 0, 43, 0, 0, 0, 0, 0, 0, 0, 79, 169, 0, 0, 125, 191, 0, 0, 0, 0, 172, 0, 0, 0, 0, 0, 0, 0, 0, 0, 22, 0, 0, 0, 0, 0, 0, 0, 0, 86, 0, 0, 0, 0, 114, 81, 117, 100]
+[2025-03-28 10:24:15] (model.py 337): INFO Source label range: [2, 9]
+[2025-03-28 10:24:15] (model.py 338): INFO Target visual label range: [0, 64]
+[2025-03-28 10:24:15] (model.py 339): INFO Number of classes: 65
+[2025-03-28 10:24:15] (model.py 385): INFO 
+loss vis_celoss: 1.1312 (75) 
+loss txt_celoss: 18.3079 (75) 
+loss discri_loss: 0.0028 (75) 
+
+[2025-03-28 10:24:15] (model.py 460): INFO Epoch 48 tar: linearAcc=0.3620, promptAcc=0.8532, mixAcc=0.8458
+[2025-03-28 10:24:16] (model.py 527): INFO 0.8458 -> 0.1792
+[2025-03-28 10:24:16] (model.py 476): INFO Pseudo-label range: [0, 9]
+[2025-03-28 10:24:16] (model.py 477): INFO Unique pseudo-labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[2025-03-28 10:24:16] (model.py 478): INFO Pseudo-label distribution: [245, 46, 18, 47, 104, 108, 43, 6, 12, 3736]
+[2025-03-28 10:24:16] (model.py 337): INFO Source label range: [1, 9]
+[2025-03-28 10:24:16] (model.py 338): INFO Target visual label range: [0, 9]
+[2025-03-28 10:24:16] (model.py 339): INFO Number of classes: 65
+[2025-03-28 10:24:17] (model.py 385): INFO 
+loss vis_celoss: 0.5364 (75) 
+loss txt_celoss: 18.3291 (75) 
+loss discri_loss: 0.0027 (75) 
+
+[2025-03-28 10:24:17] (model.py 460): INFO Epoch 49 tar: linearAcc=0.8596, promptAcc=0.8497, mixAcc=0.8541
+[2025-03-28 10:24:17] (model.py 527): INFO 0.8541 -> 0.2612
+[2025-03-28 10:24:17] (model.py 476): INFO Pseudo-label range: [0, 64]
+[2025-03-28 10:24:17] (model.py 477): INFO Unique pseudo-labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 13, 19, 27, 28, 31, 32, 37, 39, 47, 56, 61, 62, 63, 64]
+[2025-03-28 10:24:17] (model.py 478): INFO Pseudo-label distribution: [443, 223, 186, 200, 291, 178, 94, 233, 267, 823, 42, 0, 0, 36, 0, 0, 0, 0, 0, 39, 0, 0, 0, 0, 0, 0, 0, 53, 131, 0, 0, 105, 209, 0, 0, 0, 0, 227, 0, 20, 0, 0, 0, 0, 0, 0, 0, 36, 0, 0, 0, 0, 0, 0, 0, 0, 92, 0, 0, 0, 0, 116, 85, 132, 104]
+[2025-03-28 10:24:17] (model.py 387): INFO best acc=0.8953035473823547 @ epoch 12
